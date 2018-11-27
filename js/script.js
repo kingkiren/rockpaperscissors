@@ -6,12 +6,27 @@
 /* global $ */
 $("#shoot").click(function(){
     var userinput = $("#input").val();
-
-    $("#userChoice").text(userinput);
-    $("#computerChoice").text(userinput);
+var randomnumber = Math.random();
+    var computerOutput;
     
+    if(randomnumber>0.67){
+        computerOutput="Rock";
+    }
+    else if(randomnumber>0.34){
+        computerOutput="paper";
+    }
+   else if(randomnumber<0.33){
+   computerOutput="scissors";
+   }
+   
+    $("#userChoice").text(userinput);
+    $("#computerChoice").text(userInput);
 });
 
+$("computerChoice").click(function(){
+    var computerChoice 
+    
+}
 
 // DOCUMENT READY FUNCTION BELOW
 
